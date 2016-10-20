@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1031086246522",
+    "firebase_url": "https://fotrack-fb350.firebaseio.com",
+    "project_id": "fotrack-fb350",
+    "storage_bucket": "fotrack-fb350.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031086246522:android:133826d2f9f22e48",
+        "android_client_info": {
+          "package_name": "techs.newleaf.pomodoro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031086246522-g587n748sih5ek9mfiko24oc9sa54cun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "techs.newleaf.pomodoro",
+            "certificate_hash": "7AF39ED0EC9CF4DBA57CC6A1C458630CA353F0CD"
+          }
+        },
+        {
+          "client_id": "1031086246522-4s69aj1im244ifgbnjulfp0ge8p175as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp-OLfFRYPLz_FavSjAgOnyrQYn5qEy-4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031086246522-4s69aj1im244ifgbnjulfp0ge8p175as.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

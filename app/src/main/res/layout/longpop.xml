@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    android:id="@+id/element3"
+    >
+    <TextView
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Long Break Finished"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_marginTop="12dp"
+        android:textSize="16sp"
+        android:textColor="#b3ffffff"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:text="The only way to do great work is to love what you do. \n-Steve Jobs"
+        />
+    <TextView
+
+        android:id="@+id/podolongstart2"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:textSize="14sp"
+        android:textColor="#80cbc4"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+
+        android:text="START POMODORO"/>
+
+</LinearLayout>
