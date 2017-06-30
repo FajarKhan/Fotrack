@@ -15,11 +15,71 @@
       },
       "oauth_client": [
         {
+          "client_id": "1031086246522-7n3tnfadtmi7vstne23cbiioujph2s79.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "techs.newleaf.pomodoro",
+            "certificate_hash": "F819DEB51D49095011E11A3B37D125F74B31CF26"
+          }
+        },
+        {
           "client_id": "1031086246522-g587n748sih5ek9mfiko24oc9sa54cun.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "techs.newleaf.pomodoro",
             "certificate_hash": "7AF39ED0EC9CF4DBA57CC6A1C458630CA353F0CD"
+          }
+        },
+        {
+          "client_id": "1031086246522-4s69aj1im244ifgbnjulfp0ge8p175as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp-OLfFRYPLz_FavSjAgOnyrQYn5qEy-4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031086246522-4s69aj1im244ifgbnjulfp0ge8p175as.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031086246522:android:d1a0794ad22e71f1",
+        "android_client_info": {
+          "package_name": "timer.fotrack.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031086246522-mtqd0ujk2ejpsbh0esv2d7jut4hi9mo2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "timer.fotrack.com",
+            "certificate_hash": "7AF39ED0EC9CF4DBA57CC6A1C458630CA353F0CD"
+          }
+        },
+        {
+          "client_id": "1031086246522-rmu92fkqv9o3047bmob9o603iqb431uv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "timer.fotrack.com",
+            "certificate_hash": "F819DEB51D49095011E11A3B37D125F74B31CF26"
           }
         },
         {

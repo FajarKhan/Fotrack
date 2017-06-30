@@ -21,6 +21,7 @@
         android:layout_marginRight="24dp"
         android:layout_width="match_parent"
         android:layout_height="96dp"
+       android:id="@+id/PomosText"
         android:text="Some times you have to take a break and breathe before you keep moving forward \n-Kayla Panchisin"
         />
     <TextView
@@ -32,7 +33,7 @@
         android:textColor="#80cbc4"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-
+        android:background="?attr/selectableItemBackground"
         android:text="START LONG BREAK"/>
 
 </LinearLayout>

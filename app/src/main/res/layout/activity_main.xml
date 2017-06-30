@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="techs.newleaf.pomodoro.MainActivity"
+    tools:context="timer.fotrack.com.MainActivity"
     android:id="@+id/MainLayout"
     android:theme="@android:style/ThemeOverlay.Material.Dark">
     <android.support.v4.view.ViewPager
@@ -19,31 +19,159 @@
     android:layout_alignParentEnd="true"
     android:src="@mipmap/settings"
     android:background="@null"
-    android:foreground="?attr/selectableItemBackgroundBorderless"
     android:id="@+id/settings"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
     android:layout_alignParentRight="true" />
 
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/icn_report"
+        android:background="@null"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/graph"
+        android:layout_alignParentLeft="true" />
+
+
+    <EditText
+        android:layout_marginTop="110dp"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:textColor="#46FFFFFF"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="71dp"
+        android:cursorVisible="false"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/note"
+        android:textColorHint="#32ffffff"
+        android:maxLines="2"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-light"
+        android:hint="+ Click here to add a note to avoid distraction"/>
+
+
+    <View
+        android:layout_width="228dp"
+        android:layout_height="228dp"
+        android:id="@+id/ciranimation3"
+        android:background="@drawable/ciranimaa"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    <View
+        android:layout_width="228dp"
+        android:layout_height="228dp"
+        android:id="@+id/ciranimation2"
+        android:background="@drawable/ciranimaa"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    <View
+        android:layout_width="228dp"
+        android:layout_height="228dp"
+        android:id="@+id/ciranimation"
+        android:background="@drawable/ciranimaa"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
     <LinearLayout
-        android:background="@drawable/rect"
-        android:layout_width="27dp"
-        android:layout_below="@+id/round"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:layout_height="27dp"
-        android:id="@+id/linear"
-        android:visibility="invisible">
-        <TextView
+        android:layout_width="243dp"
+        android:layout_height="243dp"
+        android:id="@+id/round"
+        android:background="@drawable/seccir"
+        android:visibility="visible"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColor="#ffffff"
-            android:text=""
-            android:id="@+id/loop"
-            android:textSize="18sp"
-            android:paddingLeft="9dp"
-            android:paddingTop="2dp"/>
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true">
+
+
+    <FrameLayout
+        android:layout_width="228dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/circlea"
+        android:visibility="visible"
+        android:background="@drawable/circle">
+
+ <ImageButton
+     android:layout_width="142dp"
+     android:layout_height="142dp"
+     android:layout_marginTop="50dp"
+     android:layout_marginLeft="50dp"
+    android:id="@+id/play"
+     android:src="@mipmap/icon"
+     android:visibility="visible"
+     android:background="@null" />
+
+        <com.hanks.htextview.HTextView
+        android:layout_width="134dp"
+        android:layout_height="73dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="55sp"
+        android:layout_marginTop="78dp"
+            android:layout_marginBottom="77dp"
+            android:layout_marginRight="45dp"
+        android:layout_marginLeft="47dp"
+        android:id="@+id/countText"
+        android:fontFamily="sans-serif-light"
+        android:background="@null"
+        android:visibility="invisible" />
+
+    </FrameLayout>
+        </FrameLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="42dp"
+        android:layout_height="36dp"
+        android:id="@+id/linear"
+        android:layout_below="@+id/round"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_marginLeft="85dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+
+           android:gravity="center"
+            android:text="RESET"
+            android:visibility="invisible"
+            android:id="@+id/reset"
+            android:background="@drawable/ripple"
+            android:layout_height="match_parent" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/skip"
+            android:textSize="16sp"
+
+            android:gravity="center"
+            android:text="SKIP"
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:layout_marginRight="85dp"
+            android:layout_width="0dp"
+            android:background="@drawable/ripple"
+            android:layout_height="match_parent" />
+
 
     </LinearLayout>
-
     <FrameLayout
         android:layout_width="14dp"
         android:layout_height="14dp"
@@ -53,23 +181,23 @@
         android:layout_marginTop="34dp"
         android:layout_marginRight="15dp"
         >
-      <View
-        android:layout_width="8dp"
-        android:layout_height="8dp"
-        android:background="#32ffffff"
-          android:id="@+id/inrect1"
-         android:layout_marginTop="3dp"
-          android:layout_marginLeft="3dp">
+        <View
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="#32ffffff"
+            android:id="@+id/inrect1"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp">
 
-      </View>
-          <LinearLayout
-              android:layout_width="14dp"
-              android:layout_height="14dp"
-              android:id="@+id/rect1"
-              android:background="@drawable/rec"/>
+        </View>
+        <LinearLayout
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:id="@+id/rect1"
+            android:background="@drawable/rec"/>
 
         />
-</FrameLayout>
+    </FrameLayout>
 
     <FrameLayout
         android:layout_width="14dp"
@@ -121,7 +249,7 @@
             android:layout_height="14dp"
             android:id="@+id/rect3"
             android:background="@drawable/rec"
-           />
+            />
     </FrameLayout>
     <FrameLayout
         android:layout_width="14dp"
@@ -140,12 +268,12 @@
             android:layout_marginTop="4.5dp"
             android:layout_marginLeft="4.5dp"
             />
-    <LinearLayout
-        android:layout_width="14dp"
-        android:layout_height="14dp"
-        android:id="@+id/rect4"
-        android:background="@drawable/cir"
-        />
+        <LinearLayout
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:id="@+id/rect4"
+            android:background="@drawable/cir"
+            />
     </FrameLayout>
     <FrameLayout
         android:layout_width="14dp"
@@ -189,12 +317,12 @@
             android:background="@drawable/round"
             android:id="@+id/inrect6"
             />
-    <LinearLayout
-        android:layout_width="14dp"
-        android:layout_height="14dp"
-        android:id="@+id/rect6"
-        android:background="@drawable/cir"
-        />
+        <LinearLayout
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:id="@+id/rect6"
+            android:background="@drawable/cir"
+            />
     </FrameLayout>
     <FrameLayout
         android:layout_width="14dp"
@@ -213,17 +341,16 @@
             android:id="@+id/inrect7"
             android:layout_marginTop="3dp"
             android:layout_marginLeft="3dp"/>
-    <LinearLayout
-        android:layout_width="14dp"
-        android:layout_height="14dp"
-        android:id="@+id/rect7"
-        android:layout_below="@id/linear"
-        android:background="@drawable/rec"
-        >
+        <LinearLayout
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:id="@+id/rect7"
+            android:layout_below="@id/linear"
+            android:background="@drawable/rec"
+            >
 
         </LinearLayout>
     </FrameLayout>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -234,59 +361,6 @@
         android:text=""
         android:textColor="#32ffffff"
         android:layout_centerHorizontal="true"/>
-
-    <LinearLayout
-        android:layout_width="243dp"
-        android:layout_height="243dp"
-        android:id="@+id/round"
-        android:background="@drawable/seccir"
-        android:visibility="visible"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true">
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:clickable="true">
-
-    <FrameLayout
-        android:layout_width="228dp"
-        android:layout_height="228dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginLeft="7dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:id="@+id/circlea"
-        android:visibility="visible"
-        android:background="@drawable/circle">
-
- <ImageButton
-     android:layout_width="142dp"
-     android:layout_height="142dp"
-     android:layout_marginTop="50dp"
-     android:layout_marginLeft="50dp"
-    android:id="@+id/play"
-     android:src="@mipmap/icon"
-     android:visibility="visible"
-     android:background="@null" />
-        <TextView
-        android:layout_width="134dp"
-        android:layout_height="73dp"
-        android:text=""
-        android:textColor="#FFFFFF"
-        android:textSize="55sp"
-        android:layout_marginTop="78dp"
-            android:layout_marginBottom="77dp"
-            android:layout_marginRight="45dp"
-        android:layout_marginLeft="47dp"
-        android:id="@+id/countText"
-        android:fontFamily="sans-serif-light"
-        android:background="@null"
-        android:visibility="invisible" />
-
-    </FrameLayout>
-        </FrameLayout>
-</LinearLayout>
 
 
 </RelativeLayout>

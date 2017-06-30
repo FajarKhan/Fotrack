@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="techs.newleaf.pomodoro">
+    package="timer.fotrack.com">
 
     <uses-permission android:name="android.permission.read_contacts" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -13,30 +13,38 @@
         android:launchMode="singleTop"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
-        <service
-            android:name=".MyFirebaseMessagingService">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <service android:name=".MyFirebaseMessagingService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
         <activity
-
             android:name=".MainActivity"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Welcome_Activity"
             android:screenOrientation="portrait">
-
-        </activity>
-        <activity android:name=".Welcome_Activity">
-            <intent-filter>
+            <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".DynamicGraphActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ProductTour"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0c08ca1731bcc7783e0a16ff95210e959ce5cdbb" />
     </application>
 
 </manifest>

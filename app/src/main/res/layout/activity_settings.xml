@@ -13,7 +13,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:theme="@android:style/ThemeOverlay.Material.Dark"
-    tools:context="techs.newleaf.pomodoro.Settings">
+    tools:context="timer.fotrack.com.Settings">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -26,8 +26,8 @@
             android:background="?attr/selectableItemBackgroundBorderless"
            android:paddingStart="20dp"
             android:paddingEnd="20dp"
-            android:paddingBottom="20dp"
-            android:paddingTop="10dp"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
             android:id="@+id/Backbutton"/>
         <TextView
             android:layout_width="wrap_content"
@@ -168,12 +168,13 @@
         android:layout_marginLeft="16dp"
         android:layout_below="@+id/view3"
         android:layout_alignParentEnd="true" />
+
     <RelativeLayout
         android:background="@drawable/trans"
         android:id="@+id/themes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="26dp"
         android:padding="8dp"
         android:layout_below="@+id/theme"
         android:layout_marginLeft="6dp"
@@ -823,7 +824,7 @@
         android:layout_marginLeft="16dp"
         android:id="@+id/noti"
         android:orientation="vertical"
-        android:background="?attr/selectableItemBackgroundBorderless"
+        android:background="?attr/selectableItemBackground"
         android:layout_marginRight="16dp">
     <TextView
         android:layout_width="match_parent"
@@ -928,8 +929,8 @@
         android:layout_below="@+id/screen"
         android:layout_marginTop="16dp"
         android:background="#0affffff"
-        android:id="@+id/space1"
-       />
+        android:id="@+id/spacex"
+        />
 
     <TextView
         android:layout_width="match_parent"
@@ -940,7 +941,7 @@
         android:textSize="14sp"
         android:id="@+id/invite"
         android:layout_marginLeft="16dp"
-        android:layout_below="@+id/space1"
+        android:layout_below="@+id/spacex"
         android:layout_alignParentEnd="true" />
     <LinearLayout
         android:orientation="vertical"
@@ -972,7 +973,195 @@
         android:layout_below="@+id/invite1"
         android:background="#1effffff"
         android:id="@+id/space2"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space2"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/share"
+        android:paddingBottom="16dp"
+        android:background="?attr/selectableItemBackground">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share Fotrack with your friends"
+            android:textSize="16sp"
+            android:textColor="#deffffff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Let the world know about us"
+            android:textSize="14sp"
+            android:textColor="#8bffffff"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/share"
+        android:background="#1effffff"
+        android:id="@+id/space3"
+        android:layout_marginBottom="40dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/space3"
+        android:background="#1effffff"
+        android:id="@+id/space4"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space4"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/feedback"
+        android:paddingBottom="16dp"
+        android:background="?attr/selectableItemBackground">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:textSize="16sp"
+            android:textColor="#deffffff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Whether you need help, have ideas or just want to say “hello”"
+            android:textSize="14sp"
+            android:textColor="#8bffffff"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/feedback"
+        android:background="#1effffff"
+        android:id="@+id/space5"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space5"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/Tour"
+        android:paddingBottom="16dp"
+        android:background="?attr/selectableItemBackground">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Product Tour"
+            android:textSize="16sp"
+            android:textColor="#deffffff"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Tour"
+        android:background="#1effffff"
+        android:id="@+id/space10"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space10"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/website"
+        android:paddingBottom="16dp"
+        android:background="?attr/selectableItemBackground">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visit our website"
+            android:textSize="16sp"
+            android:textColor="#deffffff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="www.fotrack.com "
+            android:textSize="14sp"
+            android:textColor="#8bffffff"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/website"
+        android:background="#1effffff"
+        android:id="@+id/space6"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/space6"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:id="@+id/Rate"
+        android:paddingBottom="16dp"
+        android:background="?attr/selectableItemBackground">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rate Us"
+            android:textSize="16sp"
+            android:textColor="#deffffff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We are a non-profit small team working on Fotrack. Help us spread the love :)"
+            android:textSize="14sp"
+            android:textColor="#8bffffff"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/Rate"
+        android:background="#1effffff"
+        android:id="@+id/space7"
         android:layout_marginBottom="20dp"
         />
+
+    <ImageView
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Icon"
+        android:src="@drawable/icn_fotrack_settings"
+        android:layout_below="@+id/space7"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Icon"
+        android:text="Fotrack"
+        android:id="@+id/Text"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#deffffff"/>
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_below="@id/Text"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="Version 2.01"
+        android:textSize="14sp"
+        android:textColor="#8bffffff"
+        android:layout_marginBottom="20dp"/>
+
 </RelativeLayout>
 </ScrollView>

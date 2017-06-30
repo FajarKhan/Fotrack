@@ -3,4 +3,11 @@
     <string name="facebook_app_id">1030119193767417</string>
     <dimen name="left_border_distance">43dip</dimen>
     <dimen name="right_border_distance">43dip</dimen>
+
+    <string name="title_send_feedback">Send feedback to Fotrack</string>
+
+    <string name="mail_feedback_email">admin@fotrack.com</string>
+    <string name="mail_feedback_subject">Feedback on Fotrack</string>
+    <string name="mail_feedback_message">Hi,
+\n\nHere is my thoughts on Fotrack : </string>
 </resources>

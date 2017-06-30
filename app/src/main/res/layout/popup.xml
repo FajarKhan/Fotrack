@@ -16,6 +16,7 @@
     <TextView
         android:layout_marginTop="12dp"
         android:textSize="16sp"
+        android:id="@+id/PomoText"
         android:textColor="#b3ffffff"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
@@ -32,7 +33,7 @@
        android:textColor="#80cbc4"
        android:layout_width="match_parent"
        android:layout_height="52dp"
-
+       android:background="?attr/selectableItemBackground"
        android:text="START SHORT BREAK"/>
 
 </LinearLayout>
